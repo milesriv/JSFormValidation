@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+<!--<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm"> -->
+<form id="vehicle">
+<h1 style="color: blue">SHADY CAR DEALER</h1>
+<h2>Vehicle Information Request</h2>
+<p>
+<label>Name
+<input type="text" name="customer_name" size="30" required>
+</label> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="phone_number" size="30" required >
+</label>
+</p>
+
+<p>
+<label>Email 
+<input type="email" name="email_address" size="30" required >
+</label>
+</p>
+
+<fieldset>
+<legend>Vehicle Are You Interested In?</legend>
+<p><label> <input type="radio" name="vehicle" required value="car"> Car </label></p>
+<p><label> <input type="radio" name="vehicle" required value="van"> Van </label></p>
+<p><label> <input type="radio" name="vehicle" required value="suv"> SUV </label></p>
+</fieldset>
+
+<fieldset>
+<legend>Options</legend>
+<p><label> <input type="checkbox" name="options" value="all_opts" id="all_opts"> Select All </label></p> 
+<p><label> <input type="checkbox" name="options" value="ac"> A/C </label></p>
+<p><label> <input type="checkbox" name="options" value="nav"> Navigation </label></p>
+<p><label> <input type="checkbox" name="options" value="seats"> Heated Seats </label></p>
+<p><label> <input type="checkbox" name="options" value="start"> Remote Start </label></p>    
+</fieldset>
+	
+<p>
+<label>Colors
+<select id="colors" name="colors">
+<option value="" selected="selected">Select One</option>
+<option value="Blue" >Blue</option>
+<option value="Green" >Green</option>
+<option value="Yellow" >Yellow</option>
+<option value="white" >White</option>
+<option value="black" >Black</option>
+<option value="red" >Red</option>    
+</select>
+</label> 
+</p>
+
+
+<p>
+<label>Appointment Time
+<input type="datetime-local" name="appt_time" required>
+</label>
+</p>
+    
+<p>
+<label>Special Instructions
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit</button></p>
+<script src="js/script.js"></script> 
+</form>
